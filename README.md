@@ -64,7 +64,7 @@ matrix<typename T> m = matrix<typename T>(vector<vector<typename T>> v)
 
 #### read
 ```cpp
-T m(int i, int j)
+typename<T> x = m(int i, int j)
 ```
 
 - reads the value at (i, j) in the matrix.
@@ -80,7 +80,7 @@ T m(int i, int j)
 
 #### write
 ```cpp
-m(int i, int j) = (T) x
+m(int i, int j) = (typename T) x
 ```
 
 **constraints**
