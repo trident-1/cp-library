@@ -18,8 +18,8 @@ Library of useful templates for competitive programming
 
 #### Default
 ```cpp
-matrix<T> m
-matrix<T> m = matrix<T>()
+matrix<typename T> m
+matrix<typename T> m = matrix<typename T>()
 ```
 
 - It creates a 2x2 matrix with all elements having intial value as $0$.
@@ -30,7 +30,7 @@ matrix<T> m = matrix<T>()
 
 #### Constructor with size
 ```cpp
-matrix<T>(int r, int c)
+matrix<typename T>(int r, int c)
 ```
 - It creates a matrix of $r$ rows and $c$ columns with all elements having intial value as $0$.
 
@@ -46,7 +46,7 @@ matrix<T>(int r, int c)
 
 #### Constructor with data
 ```cpp
-matrix<T> m = matrix<T>(vector<vector<T>> v)
+matrix<typename T> m = matrix<typename T>(vector<vector<typename T>> v)
 ```
 
 - It creates a matrix of given 2D vector which has number of rows $r$ and columns $c$
@@ -105,10 +105,10 @@ pair<int, int> m.size()
 
 ### Multiplication operation <a name="multiply"></a>
 ```cpp
-matrix<T> r = m1 * m2;
+matrix<typename T> r = m1 * m2;
 ```
 
-- Here m1 and m2 are matrices of type T and their dimensions satisfy the requirement for matrix multiplication.<br>
+- Here m1 and m2 are matrices of type $T$ and their dimensions satisfy the requirement for matrix multiplication.<br>
 i.e. number of columns $(c1)$ in first matrix $=$  number of rows $(r2)$ in second matrix 
 
 **constraints**
@@ -122,7 +122,7 @@ where $k$ is largest dimension of the given matrices
 
 ### Multiplication under modulo M <a name="multipy_modulo"></a>
 ```cpp
-matrix<T> r = multipy_modulo(matrix <T>m1, matrix<T>m2, typename U M);
+matrix<typename T> r = multipy_modulo(matrix <typename T> m1, matrix<typename T> m2, typename U M);
 ```
 
 - Here in multiplication all values are computed under modulo m.<br>
@@ -139,7 +139,7 @@ where $k$ is largest dimension of the given matrices
 
 ### Matrix power raised to n <a name="matpow"></a>
 ```cpp
-matrix<T> r = matpow(matrix <T>m1, typename U n);
+matrix<typename T> r = matpow(matrix <typename T> m1, typename U n);
 ```
 
 - Computes the matrix power raise to n using binary exponentiation technique.
@@ -153,7 +153,7 @@ matrix<T> r = matpow(matrix <T>m1, typename U n);
 
 ### Matrix power raised to n under modulo M <a name="matpow_modulo"></a>
 ```cpp
-matrix<T> r = matpow_modulo(matrix <T>m1, typename U n, typename V M);
+matrix<typename T> r = matpow_modulo(matrix <typename T> m1, typename U n, typename V M);
 ```
 
 - Computes the matrix power raise to n under modulo M using binary exponentiation technique.
